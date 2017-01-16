@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_FRWQgUmfEeSyR4tWogH31A" name="tibco.bw.sample.binding.soap.http.BookStore.HTTPConnectorResource" type="httpconnector:HttpConnectorConfiguration">
+  <jndi:configuration xsi:type="httpconnector:HttpConnectorConfiguration" xmi:id="_FRWQgkmfEeSyR4tWogH31A" acceptQueueSize="-1">
+    <substitutionBindings xmi:id="_Q31ygEmfEeSyR4tWogH31A" template="host" propName="HOST"/>
+    <substitutionBindings xmi:id="_SmcpYEmfEeSyR4tWogH31A" template="port" propName="PORT"/>
+  </jndi:configuration>
+</jndi:namedResource>

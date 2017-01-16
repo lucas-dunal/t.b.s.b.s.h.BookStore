@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by TIBCO WSDL--><wsdl:definitions xmlns:ns0="http://www.example.com/xsd/books" xmlns:part="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.example.com/interface/books/GetBooksImpl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="Untitled" targetNamespace="http://www.example.com/interface/books/GetBooksImpl">
+    <wsdl:import location="../Schemas/Books.xsd" namespace="http://www.example.com/xsd/books"/>
+    <wsdl:types>
+        <xsd:schema xmlns="http://www.example.com/xsd/books" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.example.com/xsd/books">
+            <xsd:complexType name="BookStoreType">
+                <xsd:sequence>
+                    <xsd:element maxOccurs="unbounded" ref="ns0:Book"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="BookType">
+                <xsd:sequence>
+                    <xsd:element ref="ns0:Title"/>
+                    <xsd:element ref="ns0:Author"/>
+                    <xsd:element ref="ns0:Date"/>
+                    <xsd:element ref="ns0:ISBN"/>
+                    <xsd:element ref="ns0:Publisher"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ISBNType">
+                <xsd:simpleContent>
+                    <xsd:extension base="xsd:string"/>
+                </xsd:simpleContent>
+            </xsd:complexType>
+            <xsd:complexType name="TitleType">
+                <xsd:simpleContent>
+                    <xsd:extension base="xsd:string"/>
+                </xsd:simpleContent>
+            </xsd:complexType>
+            <xsd:element name="Author" type="xsd:string"/>
+            <xsd:element name="Book" type="ns0:BookType"/>
+            <xsd:element name="BookStore" type="ns0:BookStoreType"/>
+            <xsd:element name="Date" type="xsd:string"/>
+            <xsd:element name="ISBN" type="ns0:ISBNType"/>
+            <xsd:element name="Publisher" type="xsd:string"/>
+            <xsd:element name="Title" type="ns0:TitleType"/>
+    	</xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="GetBooksByAuthor">
+        <wsdl:part element="ns0:Author" name="author"/>
+    </wsdl:message>
+    <wsdl:message name="GetBooksOut">
+        <wsdl:part element="ns0:BookStore" name="message"/>
+    </wsdl:message>
+    <wsdl:message name="GetBooksByWlsRequest">
+    	<wsdl:part element="ns0:Author" name="author"/>
+  	</wsdl:message>
+    <wsdl:message name="GetBooksByWlsResponse">
+    	<wsdl:part element="ns0:BookStore" name="message"/>
+  	</wsdl:message>
+    <wsdl:portType name="GetBooksByAuthor">
+        <wsdl:operation name="GetBooks">
+            <wsdl:input message="tns:GetBooksByAuthor"/>
+            <wsdl:output message="tns:GetBooksOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetBooksByWls">
+      <wsdl:input message="tns:GetBooksByWlsRequest"/>
+      <wsdl:output message="tns:GetBooksByWlsResponse"/>
+    </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

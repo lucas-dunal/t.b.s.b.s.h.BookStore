@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema elementFormDefault="qualified" version="1.0" targetNamespace="www.tibco.com/plugin/java/xmlSchema/tibco.bw.jms.weblogic.client.WeblogicEventMessageDTO" xmlns:tns="www.tibco.com/plugin/java/xmlSchema/tibco.bw.jms.weblogic.client.WeblogicEventMessageDTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="WeblogicEventMessageDTO" type="tns:WeblogicEventMessageDTOType"/>
+
+  <xs:complexType name="WeblogicEventMessageDTOType">
+    <xs:sequence>
+      <xs:element name="jmsCorrelationId" type="xs:string" minOccurs="0"/>
+      <xs:element name="messageText" type="xs:string" minOccurs="0"/>
+      <xs:element name="server" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

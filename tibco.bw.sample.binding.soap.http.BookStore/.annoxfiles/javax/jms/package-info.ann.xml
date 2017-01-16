@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:package xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation">
+  <annox:class name="TextMessage">
+    <jaxb:XmlAccessorType value="NONE"/>
+    <jaxb:XmlType name="TextMessageType" propOrder="Text "/>
+    <jaxb:XmlRootElement name="TextMessage" namespace="www.tibco.com/plugin/java/xmlSchema/javax.jms.TextMessage"/>
+    <annox:field name="Text">
+      <jaxb:XmlElement name="Text" namespace="www.tibco.com/plugin/java/xmlSchema/javax.jms.TextMessage"/>
+    </annox:field>
+  </annox:class>
+  <jaxb:XmlSchema elementFormDefault="QUALIFIED" namespace="www.tibco.com/plugin/java/xmlSchema/javax.jms.TextMessage"/>
+</annox:package>

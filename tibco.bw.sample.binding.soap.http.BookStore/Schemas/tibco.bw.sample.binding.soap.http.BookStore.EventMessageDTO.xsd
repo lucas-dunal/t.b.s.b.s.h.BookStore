@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema elementFormDefault="qualified" version="1.0" targetNamespace="www.tibco.com/plugin/java/xmlSchema/tibco.bw.sample.binding.soap.http.BookStore.EventMessageDTO" xmlns:tns="www.tibco.com/plugin/java/xmlSchema/tibco.bw.sample.binding.soap.http.BookStore.EventMessageDTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="EventMessageDTO" type="tns:EventMessageDTOType"/>
+
+  <xs:complexType name="EventMessageDTOType">
+    <xs:sequence>
+      <xs:element name="jmsCorrelationId" type="xs:string" minOccurs="0"/>
+      <xs:element name="messageText" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

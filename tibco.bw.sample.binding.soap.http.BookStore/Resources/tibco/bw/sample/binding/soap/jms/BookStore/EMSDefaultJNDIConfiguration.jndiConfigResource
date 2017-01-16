@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jms="http://xsd.tns.tibco.com/bw/models/sharedresource/jms" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_2Gqi4U8sEeSVb75aw6l2iw" name="tibco.bw.sample.binding.soap.jms.BookStore.EMSDefaultJNDIConfiguration" type="jms:JNDIConnection">
+  <jndi:configuration xsi:type="jms:JNDIConnectionConfiguration" xmi:id="_2Gqi4k8sEeSVb75aw6l2iw">
+    <substitutionBindings xmi:id="_-9ouIE8tEeSVb75aw6l2iw" template="initialContextFactory" propName="/JNDI/CTX_FACTORY"/>
+    <substitutionBindings xmi:id="_Aq9LkE8uEeSVb75aw6l2iw" template="providerUrl" propName="/JNDI/PROVIDER_URL"/>
+    <userCredentials xmi:id="_fMIJcMgyEea4uY7DOVji-A">
+      <substitutionBindings xmi:id="_gbqesMgyEea4uY7DOVji-A" template="username" propName="/JNDI/USERNAME"/>
+      <substitutionBindings xmi:id="_hi_TIMgyEea4uY7DOVji-A" template="password" propName="/JNDI/PASSWORD"/>
+    </userCredentials>
+  </jndi:configuration>
+</jndi:namedResource>

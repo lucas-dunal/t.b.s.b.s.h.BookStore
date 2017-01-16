@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:package xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation">
+  <annox:class name="WeblogicEventMessageDTO">
+    <jaxb:XmlAccessorType value="NONE"/>
+    <jaxb:XmlType name="WeblogicEventMessageDTOType" propOrder="jmsCorrelationId messageText "/>
+    <jaxb:XmlRootElement name="WeblogicEventMessageDTO" namespace="www.tibco.com/plugin/java/xmlSchema/tibco.bw.sample.binding.soap.http.BookStore.WeblogicEventMessageDTO"/>
+    <annox:field name="jmsCorrelationId">
+      <jaxb:XmlElement name="jmsCorrelationId" namespace="www.tibco.com/plugin/java/xmlSchema/tibco.bw.sample.binding.soap.http.BookStore.WeblogicEventMessageDTO"/>
+    </annox:field>
+    <annox:field name="messageText">
+      <jaxb:XmlElement name="messageText" namespace="www.tibco.com/plugin/java/xmlSchema/tibco.bw.sample.binding.soap.http.BookStore.WeblogicEventMessageDTO"/>
+    </annox:field>
+  </annox:class>
+  <jaxb:XmlSchema elementFormDefault="QUALIFIED" namespace="www.tibco.com/plugin/java/xmlSchema/tibco.bw.sample.binding.soap.http.BookStore.WeblogicEventMessageDTO"/>
+</annox:package>
