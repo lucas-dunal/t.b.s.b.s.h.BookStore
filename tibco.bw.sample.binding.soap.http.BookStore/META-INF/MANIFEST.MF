@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Tibco Bw Sample Binding Soap Http BookStore Module
 Bundle-SymbolicName: tibco.bw.sample.binding.soap.http.BookStore
 Bundle-Version: 1.0.0.qualifier
-Bundle-ClassPath: .annoxfiles/,lib/wlfullclient.jar,.
+Bundle-ClassPath: .annoxfiles/,lib/wlfullclient-12.2.1.1.jar,.
 Bundle-Vendor: TIBCO Software Inc.
 Export-Package: tibco.bw.jms.weblogic.client
 Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
@@ -17,7 +17,8 @@ Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.jndiconfiguration)",
  com.tibco.bw.binding.model; filter:="(name=bw.soap)"
 TIBCO-BW-Version: 1.2.0 V18 2014-09-27
-Import-Package: com.tibco.bw.palette.shared.java;version="6.2.200",com.tibco.bw.runtime;version="6.3.200"
+Import-Package: com.tibco.bw.palette.shared.java;version="6.2.200",
+ com.tibco.bw.runtime;version="6.3.200"
 TIBCO-BW-ApplicationModule: META-INF/module.bwm
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 TIBCO-BW-ConfigProfile: META-INF/default.substvar

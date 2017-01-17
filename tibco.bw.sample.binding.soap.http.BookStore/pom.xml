@@ -15,17 +15,21 @@
       <groupId>com.tibco.plugins</groupId>
       <artifactId>com.tibco.bw.palette.shared</artifactId>
       <version>6.1.100</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.tibco.plugins</groupId>
       <artifactId>com.tibco.bw.runtime</artifactId>
       <version>6.3.200</version>
+      <scope>provided</scope>
     </dependency>
-    <dependency>
+<!-- 
+   <dependency>
       <groupId>weblogic</groupId>
       <artifactId>wlfullclient</artifactId>
       <version>12.2.1.1</version>
     </dependency>
+-->
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>

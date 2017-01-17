@@ -10,6 +10,21 @@
   </parent>
   <artifactId>tibco.bw.sample.binding.soap.http.BookStore.application</artifactId>
   <packaging>bwear</packaging>
+  <properties>
+    <deployToAdmin>true</deployToAdmin>
+    <profile>UnixProfile.substvar</profile>
+    <agentHost>localhost</agentHost>
+    <domain>ESB-TIBCO-DEV-DOMAIN1</domain>
+    <appSpace>APPSPACE1</appSpace>
+    <appSpaceDesc></appSpaceDesc>
+    <redeploy>true</redeploy>
+    <httpPort>8060</httpPort>
+    <agentPort>8079</agentPort>
+    <osgiPort></osgiPort>
+    <domainDesc></domainDesc>
+    <appNode>APPNODE1</appNode>
+    <appNodeDesc></appNodeDesc>
+  </properties>
   <build>
     <plugins>
       <plugin>
@@ -17,7 +32,21 @@
         <artifactId>bw6-maven-plugin</artifactId>
         <version>1.1.0</version>
         <extensions>true</extensions>
-        <configuration />
+        <configuration>
+          <deployToAdmin>${deployToAdmin}</deployToAdmin>
+          <agentHost>${agentHost}</agentHost>
+          <agentPort>${agentPort}</agentPort>
+          <domain>${domain}</domain>
+          <domainDesc>${domainDesc}</domainDesc>
+          <appSpace>${appSpace}</appSpace>
+          <appSpaceDesc>${appSpaceDesc}</appSpaceDesc>
+          <appNode>${appNode}</appNode>
+          <appNodeDesc>${appNodeDesc}</appNodeDesc>
+          <osgiPort>${osgiPort}</osgiPort>
+          <httpPort>${httpPort}</httpPort>
+          <redeploy>${redeploy}</redeploy>
+          <profile>${profile}</profile>
+        </configuration>
       </plugin>
     </plugins>
   </build>
